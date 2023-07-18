@@ -1,7 +1,7 @@
-/*Esto es un comentario*/
+/* Esto es un comentario */
 
 * {
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ body {
 .nav-menu {
     display: flex;
     margin-right: 40px;
-    list-style: none;
+    list-style: none;   
 }
 
 .nav-menu-item {
@@ -51,10 +51,9 @@ body {
 
 .nav-menu-link {
     padding: 8px 12px;
-    
 }
 
-.nav-menu-link:hover {
+.nav-menu-link:hover{
     background-color: #024070;
-    border-radius: 15px;
+    border-radius: 10px;
 }
