@@ -11,7 +11,6 @@ import org.springframework.data.jpa.repository.Query;
  */
 public interface ProductoDao extends JpaRepository<Producto, Long> {
 
-   
     //Ejemplo de método utilizando consultas ampliadas
     public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
     

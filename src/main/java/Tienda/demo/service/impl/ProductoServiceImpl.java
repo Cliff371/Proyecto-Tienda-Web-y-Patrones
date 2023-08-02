@@ -49,19 +49,16 @@ public class ProductoServiceImpl implements ProductoService {
     public List<Producto>buscaProductosPorPrecioEntre(double precioInf, double precioSup) {
         return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
     }
-    
-    //Se implementa el método para recuperar los productos con una consulta JPQL
+
     @Override
     @Transactional(readOnly = true)
     public List<Producto>consultaJPQL(double precioInf, double precioSup) {
         return productoDao.consultaJPQL(precioInf, precioSup);
     }
     
-    //Se implementa el método para recuperar los productos con una consulta SQL
     @Override
     @Transactional(readOnly = true)
     public List<Producto>consultaSQL(double precioInf, double precioSup) {
         return productoDao.consultaSQL(precioInf, precioSup);
     }
-    
 }
